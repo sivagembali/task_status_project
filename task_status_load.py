@@ -1,4 +1,4 @@
-#! C:\ProgramData\Anaconda3\python
+#! C:\Anaconda3\python
 import cgi
 import datetime
 print ("Content-Type: text/html\r\n")

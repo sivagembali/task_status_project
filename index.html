@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Python Workshops Status </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#viewstatus").click( function(){
+                $.get("task_dashboard.py", function(data, status){
+                    alert("Data: " + data + "\nStatus: " + status);
+                    $("p").html(data);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="viewstatus" type="button" >View Status </button>
+    <div>
+        <p id="output">
+        
+        </p>
+    </div>
+    
+</body>
+
+</html>

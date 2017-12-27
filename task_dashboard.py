@@ -1,4 +1,4 @@
-#! C:\ProgramData\Anaconda3\python
+#! C:\Anaconda3\python
 print ("Content-Type: text/html\r\n")
 print("<!DOCTYPE html>")
 print("<html><body bgcolor='Silver'>")
