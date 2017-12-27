@@ -1,23 +1,17 @@
-#! C:\ProgramData\Anaconda3\python
-import socket
+#! C:\Anaconda3\python
 print ("Content-Type: text/html\r\n")
 print("<!DOCTYPE html>")
 print("<html><body bgcolor='Silver'>")
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-s.connect(("8.8.8.8", 80))
-#print(s.getsockname()[0])
-print("<form action='http://%s/python/task_status_load.py' method='get'>"%s.getsockname()[0])
+print("<form action='task_status_load.py' method='get'>")
 print("<input type='text' name='name' value='Raja' />")
 print("<input type='text' name='task' value='Task1'/>")    
 print("<input type='hidden' name='status' value='started' />")
 print("<input type='submit' value='Start' />")
 print("</form>")
-print("<form action='http://%s/python/task_status_load.py' method='get'>"%s.getsockname()[0])
+print("<form action='task_status_load.py' method='get'>")
 print("<input type='text' name='name' value='Raja' />")
 print("<input type='text' name='task' value='Task1'/>")
 print("<input type='hidden' name='status' value='completed' />")    
 print("<input type='submit' value='Completed' />")    
 print("</form>")
-s.close()
 print("</body></html>")
-#192.168.2.14  +"s.getsockname()[0]"+
